@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jlr.rcsillag.vault.configserver</groupId>
-	<artifactId>vault-config-server</artifactId>
+	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>vault-config-server</name>
-	<description>Demo project for spring cloud config with vault backend</description>
+	<name>config-server</name>
+	<description>Spring Cloud Configuration server application</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -23,10 +23,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
 
 		<dependency>
