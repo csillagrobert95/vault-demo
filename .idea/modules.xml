@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/vault-cert-client/vault-cert-client.iml" filepath="$PROJECT_DIR$/vault-cert-client/vault-cert-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/vault-config-server/vault-config-server.iml" filepath="$PROJECT_DIR$/vault-config-server/vault-config-server.iml" />
     </modules>
   </component>

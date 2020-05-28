@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/vault-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/vault-cert-client/pom.xml" />
       </list>
     </option>
   </component>
