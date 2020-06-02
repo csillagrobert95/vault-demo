@@ -27,8 +27,8 @@ public class CredentialLogger implements CommandLineRunner {
 
         logger.info("----------------------------------------");
         logger.info("Configuration properties");
-        logger.info("   example.username is {}", configuration.getUsername());
-        logger.info("   example.password is {}", configuration.getPassword());
+        logger.info("   vault.username is {}", configuration.getUsername());
+        logger.info("   vault.password is {}", configuration.getPassword());
         logger.info("----------------------------------------");
     }
 }

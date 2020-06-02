@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/vault-cert-client/vault-cert-client.iml" filepath="$PROJECT_DIR$/vault-cert-client/vault-cert-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vault-client-gateway/vault-client-gateway.iml" filepath="$PROJECT_DIR$/vault-client-gateway/vault-client-gateway.iml" />
     </modules>
   </component>
 </project>

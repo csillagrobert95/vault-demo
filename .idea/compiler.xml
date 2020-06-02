@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="vault-cert-client" />
+        <module name="vault-client-gateway" />
         <module name="vault-config-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="vault-cert-client" target="1.8" />
+      <module name="vault-client-gateway" target="1.8" />
       <module name="vault-config-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>

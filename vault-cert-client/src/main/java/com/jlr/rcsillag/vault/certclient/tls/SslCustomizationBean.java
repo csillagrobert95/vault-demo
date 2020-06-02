@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.certclient.ssl;
+package com.jlr.rcsillag.vault.certclient.tls;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.server.SslStoreProvider;
@@ -14,6 +14,7 @@ import java.security.KeyStore;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
+import java.util.Arrays;
 
 /**
  * Created by Robi on 5/27/2020.
@@ -31,14 +32,17 @@ public class SslCustomizationBean implements WebServerFactoryCustomizer<Configur
         factory.setSslStoreProvider(new SslStoreProvider() {
             @Override
             public KeyStore getKeyStore() {
-                VaultCertificateResponse vaultResponse = vaultTemplate.opsForPki("pki_int").issueCertificate(
-                        "server", VaultCertificateRequest.create("localhost"));
+                VaultCertificateResponse vaultResponse = vaultTemplate.opsForPki("pki_int")
+                        .issueCertificate("server", VaultCertificateRequest.builder()
+                                .commonName("localhost")
+                                .ipSubjectAltNames(Arrays.asList("10.128.0.3"))
+                                .build());
                 return vaultResponse.getData().createKeyStore("server");
             }
 
             @Override
             public KeyStore getTrustStore() throws Exception {
-                Certificate cert = vaultTemplate.doWithVault(c -> c.execute("pki/ca", HttpMethod.GET, request -> {
+                Certificate certPki = vaultTemplate.doWithVault(c -> c.execute("pki/ca", HttpMethod.GET, request -> {
                 }, response -> {
                     try {
                         return CertificateFactory.getInstance("X.509").generateCertificate(response.getBody());
@@ -46,9 +50,19 @@ public class SslCustomizationBean implements WebServerFactoryCustomizer<Configur
                         throw new RuntimeException("Error reading CA certificate from vault", e);
                     }
                 }));
+                Certificate certPkiInt = vaultTemplate.doWithVault(c -> c.execute("pki_int/ca", HttpMethod.GET, request -> {
+                }, response -> {
+                    try {
+
+                        return CertificateFactory.getInstance("X.509").generateCertificate(response.getBody());
+                    } catch (CertificateException e) {
+                        throw new RuntimeException("Error reading CA certificate from vault", e);
+                    }
+                }));
                 KeyStore trustStore = KeyStore.getInstance("JKS");
                 trustStore.load(null, null);
-                trustStore.setCertificateEntry("vault", cert);
+                trustStore.setCertificateEntry("vault_pki", certPki);
+                trustStore.setCertificateEntry("vault_pki_int", certPkiInt);
                 return trustStore;
             }
         });

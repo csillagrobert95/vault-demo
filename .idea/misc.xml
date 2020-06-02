@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/vault-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/vault-cert-client/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/vault-client-gateway/pom.xml" />
       </list>
     </option>
   </component>
