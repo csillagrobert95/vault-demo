@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.gateway;
+package com.rcsillag.vault.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.gateway.tls;
+package com.rcsillag.vault.gateway.tls;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.server.SslStoreProvider;

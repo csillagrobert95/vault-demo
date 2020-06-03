@@ -1,6 +1,6 @@
-package com.jlr.rcsillag.vault.gateway.controller;
+package com.rcsillag.vault.gateway.controller;
 
-import com.jlr.rcsillag.vault.gateway.service.GatewayService;
+import com.rcsillag.vault.gateway.service.GatewayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

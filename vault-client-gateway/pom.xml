@@ -8,7 +8,7 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.jlr.rcsillag.vault.gateway</groupId>
+	<groupId>com.rcsillag.vault.gateway</groupId>
 	<artifactId>vault-client-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>vault-client-gateway</name>

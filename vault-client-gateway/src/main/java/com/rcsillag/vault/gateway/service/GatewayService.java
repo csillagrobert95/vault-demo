@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.gateway.service;
+package com.rcsillag.vault.gateway.service;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
