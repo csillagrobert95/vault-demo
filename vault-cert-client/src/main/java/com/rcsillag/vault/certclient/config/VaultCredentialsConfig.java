@@ -3,7 +3,7 @@ package com.rcsillag.vault.certclient.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Created by Robi on 5/28/2020.
+ * Domain model for configuration properties stored in Vault.
  */
 @ConfigurationProperties("vault")
 public class VaultCredentialsConfig {

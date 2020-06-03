@@ -6,11 +6,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Robi on 5/27/2020.
+ * This class provides the methods for handling incoming requests.
  */
 @RestController
 @RequestMapping(value="/hello")
 public class HelloController {
+
+    /**
+     * Returns the string 'Hello ' concatenated with the name got as an argument.
+     * @param name The name to greet.
+     * @return 'Hello ' concatenated with the name got as an argument.
+     */
     @RequestMapping(value = "/{name}", method = RequestMethod.GET)
     public String sayHello(@PathVariable(name="name")String name){
         return "Hello " + name;

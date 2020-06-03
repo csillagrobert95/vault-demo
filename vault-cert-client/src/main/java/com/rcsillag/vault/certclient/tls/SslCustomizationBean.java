@@ -17,16 +17,27 @@ import java.security.cert.CertificateFactory;
 import java.util.Arrays;
 
 /**
- * Created by Robi on 5/27/2020.
+ * Bean for customizing SSL/TLS certificate management.
  */
 @Component
 public class SslCustomizationBean implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
+    /**
+     * The VaultTemplate to use for accessing Hashicorp Vault.
+     */
     private VaultTemplate vaultTemplate;
 
+    /**
+     * Constructor.
+     * @param vaultTemplate The VaultTemplate to use.
+     */
     public SslCustomizationBean(@Autowired VaultTemplate vaultTemplate) {
         this.vaultTemplate = vaultTemplate;
     }
 
+    /**
+     * Customize the KeyStore and TrustStore.
+     * @param factory The ConfigurableServletWebServerFactory.
+     */
     @Override
     public void customize(ConfigurableServletWebServerFactory factory) {
         factory.setSslStoreProvider(new SslStoreProvider() {

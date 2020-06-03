@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
+/**
+ * Main class of the vault-cert-client module.
+ */
 @SpringBootApplication
 @EnableConfigurationProperties(VaultCredentialsConfig.class)
 public class VaultCertClientApplication {
