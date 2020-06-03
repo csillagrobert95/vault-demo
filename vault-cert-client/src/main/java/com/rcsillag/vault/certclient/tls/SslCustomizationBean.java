@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.certclient.tls;
+package com.rcsillag.vault.certclient.tls;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.server.SslStoreProvider;

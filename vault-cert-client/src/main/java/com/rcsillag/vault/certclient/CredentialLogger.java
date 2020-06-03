@@ -1,6 +1,6 @@
-package com.jlr.rcsillag.vault.certclient;
+package com.rcsillag.vault.certclient;
 
-import com.jlr.rcsillag.vault.certclient.config.VaultCredentialsConfig;
+import com.rcsillag.vault.certclient.config.VaultCredentialsConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3c84ae-0c5e-4f2d-a697-014d597e70ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-server/pom.xml" afterPath="$PROJECT_DIR$/config-server/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config-server/src/main/java/com/jlr/rcsillag/vault/configserver/ConfigServerApplication.java" afterPath="$PROJECT_DIR$/config-server/src/main/java/com/rcsillag/vault/configserver/ConfigServerApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config-server/src/test/java/com/jlr/rcsillag/vault/configserver/ConfigServerApplicationTests.java" afterPath="$PROJECT_DIR$/config-server/src/test/java/com/rcsillag/vault/configserver/ConfigServerApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-cert-client/pom.xml" afterPath="$PROJECT_DIR$/vault-cert-client/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/CredentialLogger.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/CredentialLogger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplication.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/config/VaultCredentialsConfig.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCredentialsConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/controller/HelloController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vault-cert-client/src/test/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplicationTests.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/test/java/com/rcsillag/vault/certclient/VaultCertClientApplicationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/vault-config-server/target/" />
     <ignored path="$PROJECT_DIR$/vault-cert-client/target/" />
@@ -22,7 +26,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="SslCustomizationBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-187">
               <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
@@ -34,7 +38,7 @@
         </entry>
       </file>
       <file leaf-file-name="CredentialLogger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/CredentialLogger.java">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/CredentialLogger.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="64" />
@@ -43,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -85,18 +99,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SslCustomizationBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-client-gateway/src/main/java/com/jlr/rcsillag/vault/gateway/tls/SslCustomizationBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GatewayController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vault-client-gateway/src/main/java/com/jlr/rcsillag/vault/gateway/controller/GatewayController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,7 +112,7 @@
         </entry>
       </file>
       <file leaf-file-name="VaultCredentialsConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/config/VaultCredentialsConfig.java">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCredentialsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -120,13 +122,13 @@
         </entry>
       </file>
       <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +157,6 @@
         <option value="$PROJECT_DIR$/vault-config-server/src/main/java/com/jlr/rcsillag/vault/configserver/VaultConfigServerApplication.java" />
         <option value="$PROJECT_DIR$/vault-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/vault-cert-client/pom.xml" />
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/vault-config-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/ssl/SslCustomizationBean.java" />
@@ -172,6 +173,7 @@
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java" />
         <option value="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/jlr/rcsillag/vault/gateway/tls/SslCustomizationBean.java" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/vault-cert-client/pom.xml" />
       </list>
     </option>
   </component>
@@ -548,76 +550,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vault-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vault-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vault-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configserver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1124,7 +1056,7 @@
       <workItem from="1590754171081" duration="3315000" />
       <workItem from="1591026125354" duration="4311000" />
       <workItem from="1591087435641" duration="6504000" />
-      <workItem from="1591169635552" duration="1121000" />
+      <workItem from="1591169635552" duration="2653000" />
     </task>
     <servers />
   </component>
@@ -1134,7 +1066,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62523000" />
+    <option name="totallyTimeSpent" value="64055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1146,7 +1078,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1220,7 +1152,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="29" column="72" lean-forward="false" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
@@ -1230,24 +1162,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplication.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1296,24 +1228,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplication.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1348,7 +1280,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="81" lean-forward="false" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
@@ -1446,14 +1378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config-server/src/test/java/com/rcsillag/vault/configserver/ConfigServerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1483,20 +1407,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/test/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/test/java/com/rcsillag/vault/certclient/VaultCertClientApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/VaultCertClientApplication.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding>
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1553,7 +1478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/config/VaultCredentialsConfig.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCredentialsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -1561,18 +1486,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
@@ -1582,7 +1507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/jlr/rcsillag/vault/certclient/CredentialLogger.java">
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/CredentialLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="64" />
@@ -1610,8 +1535,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>

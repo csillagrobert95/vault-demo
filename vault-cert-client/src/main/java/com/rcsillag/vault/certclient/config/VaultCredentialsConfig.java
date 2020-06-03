@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.certclient.config;
+package com.rcsillag.vault.certclient.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

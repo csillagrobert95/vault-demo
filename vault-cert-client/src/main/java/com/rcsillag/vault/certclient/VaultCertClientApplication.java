@@ -1,6 +1,6 @@
-package com.jlr.rcsillag.vault.certclient;
+package com.rcsillag.vault.certclient;
 
-import com.jlr.rcsillag.vault.certclient.config.VaultCredentialsConfig;
+import com.rcsillag.vault.certclient.config.VaultCredentialsConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

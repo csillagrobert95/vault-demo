@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.certclient.controller;
+package com.rcsillag.vault.certclient.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.certclient;
+package com.rcsillag.vault.certclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
