@@ -1,4 +1,4 @@
-package com.jlr.rcsillag.vault.configserver;
+package com.rcsillag.vault.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
