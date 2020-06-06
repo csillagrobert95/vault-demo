@@ -14,5 +14,4 @@ public class VaultCertClientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VaultCertClientApplication.class, args);
 	}
-
 }
