@@ -61,18 +61,9 @@ public class SslCustomizationBean implements WebServerFactoryCustomizer<Configur
                         throw new RuntimeException("Error reading CA certificate from vault.", e);
                     }
                 }));
-                Certificate certPkiInt = vaultTemplate.doWithVault(c -> c.execute("pki_int/ca", HttpMethod.GET, request -> {
-                }, response -> {
-                    try {
-                        return CertificateFactory.getInstance("X.509").generateCertificate(response.getBody());
-                    } catch (CertificateException e) {
-                        throw new RuntimeException("Error reading CA certificate from vault.", e);
-                    }
-                }));
                 KeyStore trustStore = KeyStore.getInstance("JKS");
                 trustStore.load(null, null);
                 trustStore.setCertificateEntry("vault_pki", certPki);
-                trustStore.setCertificateEntry("vault_pki_int", certPkiInt);
                 return trustStore;
             }
         });
