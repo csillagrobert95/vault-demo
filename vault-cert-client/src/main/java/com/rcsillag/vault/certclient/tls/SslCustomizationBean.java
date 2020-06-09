@@ -1,5 +1,6 @@
 package com.rcsillag.vault.certclient.tls;
 
+import com.rcsillag.vault.certclient.config.VaultCertificateConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.server.SslStoreProvider;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
@@ -7,14 +8,12 @@ import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerF
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.vault.core.VaultTemplate;
-import org.springframework.vault.support.VaultCertificateRequest;
-import org.springframework.vault.support.VaultCertificateResponse;
+import org.springframework.vault.support.CertificateBundle;
 
 import java.security.KeyStore;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
-import java.util.Arrays;
 
 /**
  * Bean for customizing SSL/TLS certificate management.
@@ -27,11 +26,19 @@ public class SslCustomizationBean implements WebServerFactoryCustomizer<Configur
     private VaultTemplate vaultTemplate;
 
     /**
+     * The TLS certificate data.
+     */
+    private VaultCertificateConfig vaultCertificateConfig;
+
+    /**
      * Constructor.
      * @param vaultTemplate The VaultTemplate to use.
+     * @param vaultCertificateConfig The TLS certificate data to use.
      */
-    public SslCustomizationBean(@Autowired VaultTemplate vaultTemplate) {
+    public SslCustomizationBean(@Autowired VaultTemplate vaultTemplate,
+                                @Autowired VaultCertificateConfig vaultCertificateConfig) {
         this.vaultTemplate = vaultTemplate;
+        this.vaultCertificateConfig = vaultCertificateConfig;
     }
 
     /**
@@ -43,12 +50,11 @@ public class SslCustomizationBean implements WebServerFactoryCustomizer<Configur
         factory.setSslStoreProvider(new SslStoreProvider() {
             @Override
             public KeyStore getKeyStore() {
-                VaultCertificateResponse vaultResponse = vaultTemplate.opsForPki("pki_int")
-                        .issueCertificate("server", VaultCertificateRequest.builder()
-                                .commonName("localhost")
-                                .ipSubjectAltNames(Arrays.asList("10.128.0.3"))
-                                .build());
-                return vaultResponse.getData().createKeyStore("server");
+                CertificateBundle appCertBundle = CertificateBundle.of(vaultCertificateConfig.getSerialNumber(),
+                        vaultCertificateConfig.getCertificate(),
+                        vaultCertificateConfig.getIssuingCaCertificate(),
+                        vaultCertificateConfig.getPrivateKey());
+                return appCertBundle.createKeyStore("server");
             }
 
             @Override
