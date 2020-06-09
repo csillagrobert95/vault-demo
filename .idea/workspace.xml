@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3c84ae-0c5e-4f2d-a697-014d597e70ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCertificateConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java" afterPath="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-cert-client/.gitignore" afterPath="$PROJECT_DIR$/vault-cert-client/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/vault-config-server/target/" />
     <ignored path="$PROJECT_DIR$/vault-cert-client/target/" />
@@ -44,6 +42,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vault-cert-client/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SslCustomizationBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,20 +84,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GatewayServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/service/GatewayServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#676#677#0" expanded="false" />
-                <element signature="e#725#726#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vault-client-gateway/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VaultCertificateConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VaultCertificateConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCertificateConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -204,6 +198,7 @@
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/VaultCertClientApplication.java" />
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/config/VaultCertificateConfig.java" />
         <option value="$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java" />
+        <option value="$PROJECT_DIR$/vault-cert-client/.gitignore" />
       </list>
     </option>
   </component>
@@ -1128,7 +1123,7 @@
       <workItem from="1591439437222" duration="3454000" />
       <workItem from="1591530509991" duration="33000" />
       <workItem from="1591603393769" duration="21962000" />
-      <workItem from="1591687741626" duration="11988000" />
+      <workItem from="1591687741626" duration="12251000" />
     </task>
     <servers />
   </component>
@@ -1159,7 +1154,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119524000" />
+    <option name="totallyTimeSpent" value="119787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1224,14 +1219,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1538,14 +1525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/vault/spring-vault-core/2.2.0.RELEASE/spring-vault-core-2.2.0.RELEASE.jar!/org/springframework/vault/core/VaultPkiOperations.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1640,6 +1619,22 @@
             <element signature="e#1097#1098#0" expanded="true" />
             <element signature="e#1141#1142#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vault-cert-client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
