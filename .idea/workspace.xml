@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3c84ae-0c5e-4f2d-a697-014d597e70ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/config/VaultCertificateConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/VaultClientGatewayApplication.java" afterPath="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/VaultClientGatewayApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/tls/SslCustomizationBean.java" afterPath="$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/tls/SslCustomizationBean.java" />
     </list>
     <ignored path="$PROJECT_DIR$/vault-config-server/target/" />
     <ignored path="$PROJECT_DIR$/vault-cert-client/target/" />
@@ -31,10 +28,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SslCustomizationBean.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SslCustomizationBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/tls/SslCustomizationBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
+            <state relative-caret-position="782">
               <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vault-client-gateway/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -1062,7 +1059,7 @@
       <workItem from="1591439437222" duration="3454000" />
       <workItem from="1591530509991" duration="33000" />
       <workItem from="1591603393769" duration="21962000" />
-      <workItem from="1591687741626" duration="15158000" />
+      <workItem from="1591687741626" duration="15786000" />
     </task>
     <servers />
   </component>
@@ -1093,7 +1090,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122694000" />
+    <option name="totallyTimeSpent" value="123322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1105,7 +1102,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1119,7 +1117,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2487725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2487725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1518,14 +1516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vault-client-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vault-cert-client/src/main/java/com/rcsillag/vault/certclient/tls/SslCustomizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1552,11 +1542,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vault-client-gateway/src/main/java/com/rcsillag/vault/gateway/tls/SslCustomizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
+        <state relative-caret-position="782">
           <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vault-client-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
